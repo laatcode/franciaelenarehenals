@@ -48,17 +48,21 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: .5s;
+    transition: .3s;
     z-index: 2;
 
     &.active{
         right: 0;
+
+        ul {
+            display: block;
+        }
     }
 
     ul {
         list-style: none;
-        position: inherit;
-        right: inherit;
+        // right: inherit;
+        display: none;
     }
 
     li {
