@@ -9,6 +9,25 @@
     <title>Referencias</title>
 </head>
 <body>
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="propuesta.html">Propuesta</a>
+            </li>
+            <li>
+                <a href="mision.html">Misión</a>
+            </li>
+            <li>
+                <a href="vision.html">Visión</a>
+            </li>
+            <li>
+                <a href="referencias.html">Referencias</a>
+            </li>
+        </ul>
+    </div>
     <header class="header">
         <a class="header__logo" href="index.html">
             <img src="assets/images/edificio.png" alt="Principal">
@@ -32,6 +51,7 @@
                 </li>
             </ul>
         </nav>
+        <i id="burguer-button" class="burguer-button fas fa-bars"></i>
     </header>
     <div class="container main">
         <h1>Referencias</h1>
@@ -86,5 +106,13 @@
             </a>
         </div>
     </footer>
+    <script>
+        let $burguerButton = document.getElementById('burguer-button')
+        let $mobileMenu = document.getElementById('mobile-menu')
+
+        $burguerButton.addEventListener('click', function(){
+            $mobileMenu.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>

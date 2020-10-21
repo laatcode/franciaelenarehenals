@@ -28,7 +28,7 @@ body {
 .burguer-button {
   display: none;
   font-size: 2rem;
-  z-index: 0;
+  z-index: 3;
 }
 @media screen and (max-width: 800px) {
   .burguer-button {
@@ -37,8 +37,8 @@ body {
 }
 
 .mobile-menu {
-  background-color: rgba(8, 18, 112, 0.8);
-  position: absolute;
+  background-color: rgba(8, 18, 112, 0.9);
+  position: fixed;
   top: 0;
   right: 100%;
   bottom: 0;
@@ -48,6 +48,7 @@ body {
   align-items: center;
   text-align: center;
   transition: 0.5s;
+  z-index: 2;
 }
 .mobile-menu.active {
   right: 0;
@@ -217,8 +218,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 800px) {
+  .references {
+    display: block;
+  }
+}
 .references article {
   text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .references article {
+    margin: 20px 0;
+  }
 }
 
 .footer {
@@ -229,6 +240,16 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    display: block;
+    text-align: center;
+    height: 100%;
+  }
+  .footer div {
+    padding: 20px;
+  }
 }
 .footer h3 {
   margin-bottom: 20px;
